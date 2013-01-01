@@ -82,25 +82,21 @@ module Yahoo
             :category_id, :product_id, :person_id, :brand_id, :store_id
           ]
         when 'categoryRanking'
+          requires = []
         when 'categorySearch'
+          requires = []
         when 'itemLookup'
-          requires = [
-            :itemcode
-          ]
+          requires = [:itemcode]
         when 'queryRanking'
+          requires = []
         when 'contentMatchItem'
-          requires = [
-            :url
-          ]
+          requires = [:url]
         when 'contentMatchRanking'
-          requires = [
-            :url
-          ]
+          requires = [:url]
         when 'getModule'
-          requires = [
-            :position
-          ]
+          requires = [:position]
         when 'eventSearch'
+          requires = []
         when 'reviewSearch'
           requires = [
             :jan, :category_id, :product_id, :person_id, :store_id
