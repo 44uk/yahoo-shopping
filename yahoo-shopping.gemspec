@@ -1,5 +1,5 @@
-# -*- encoding: utf-8 -*-
-require File.expand_path('../lib/yahoo-shopping/version', __FILE__)
+# coding: utf-8
+require File.expand_path('../lib/yahoo/version', __FILE__)
 
 Gem::Specification.new do |gem|
   gem.authors       = ["yukku0423"]
@@ -13,7 +13,7 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.name          = "yahoo-shopping"
   gem.require_paths = ["lib"]
-  gem.version       = Yahoo::Shopping::VERSION
+  gem.version       = Yahoo::VERSION
 
   gem.add_dependency('nokogiri', '~> 1.4')
 end
