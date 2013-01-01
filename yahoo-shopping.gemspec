@@ -14,4 +14,6 @@ Gem::Specification.new do |gem|
   gem.name          = "yahoo-shopping"
   gem.require_paths = ["lib"]
   gem.version       = Yahoo::Shopping::VERSION
+
+  gem.add_dependency('nokogiri', '~> 1.4')
 end
