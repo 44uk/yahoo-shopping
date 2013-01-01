@@ -174,16 +174,13 @@ module Yahoo
         @doc.remove_namespaces!
       end
 
+      def /(path)
+        @doc/path
+      end
+      alias_method :search, :/
+
       def doc
         @doc
-      end
-
-      def query
-        self.doc/'Query'
-      end
-
-      def items
-        self.doc/'Hit'
       end
 
       def total_result_available
