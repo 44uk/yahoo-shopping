@@ -12,6 +12,8 @@ class Yahoo::ShoppingTest < Test::Unit::TestCase
 
   Yahoo::Shopping.configure do |options|
     options[:appid] = YAHOO_APPID
+    options[:affiliate_type]  = 'yid'
+    options[:affiliate_id]    = 'DummyId.JA_dummy--'
   end
 
   Yahoo::Shopping.debug = true
