@@ -115,7 +115,7 @@ module Yahoo
         request_url = "#{SERVICE_URL}#{API_VERSION}/"
         request_url.sub!(%r|\Ahttp://|, 'https://') if opts.delete(:ssl)
 
-        request_url << "#{opts[:format]}/" if FORMATS.include?(opts[:format])
+        request_url << "#{opts.delete(:format)}/" if FORMATS.include?(opts[:format])
         request_url << opts.delete(:operation)
         request_url << build_params(opts)
 
